@@ -12,12 +12,12 @@ from dotenv import load_dotenv
 
 # Load environment variables
 load_dotenv()
-os.environ["HF_TOKEN"] = os.getenv("HF_TOKEN")
-os.secrets["HF_TOKEN","GROQ_API"]
+hf_api = st.secrets["HF_TOKEN"]
+st.secrets["HF_TOKEN","GROQ_API"]
 
 # Embeddings & LLM
 embeddings = HuggingFaceEmbeddings(model="all-MiniLM-L6-v2")
-groq_api_key = os.getenv("GROQ_API")
+groq_api_key = st.secrets["GROQ_API"]
 llm = ChatGroq(model="openai/gpt-oss-20b", groq_api_key=groq_api_key)
 
 # Streamlit UI
