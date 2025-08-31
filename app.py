@@ -21,7 +21,7 @@ groq_api_key = st.secrets["GROQ_API"]
 llm = ChatGroq(model="openai/gpt-oss-20b", groq_api_key=groq_api_key)
 
 # Streamlit UI
-st.title("📘 Class 10 Science Homework Creator & Evaluator")
+st.title("📘 Homework Creator & Evaluator")
 
 # Step 1: Upload PDF
 st.subheader("Step 1: Upload Study Material (PDF only)")
