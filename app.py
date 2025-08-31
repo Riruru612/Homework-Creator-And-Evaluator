@@ -13,7 +13,7 @@ from dotenv import load_dotenv
 # Load environment variables
 load_dotenv()
 hf_api = st.secrets["HF_TOKEN"]
-st.secrets["HF_TOKEN","GROQ_API"]
+
 
 # Embeddings & LLM
 embeddings = HuggingFaceEmbeddings(model="all-MiniLM-L6-v2")
