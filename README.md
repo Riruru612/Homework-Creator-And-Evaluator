@@ -2,6 +2,8 @@
 
 An AI-powered Streamlit application that helps teachers create homework assignments from study materials (PDFs) and evaluate student submissions automatically.
 
+[💻 Live Demo] [https://homework-creator-and-evaluator-crx5amammrqejksbhcgq2w.streamlit.app/]
+
 Built using LangChain, FAISS, Hugging Face embeddings, and Groq LLMs.
 
 ⸻
@@ -43,6 +45,8 @@ Homework-AI/
       Create a .env file in the root directory:
     	HF_TOKEN=your_huggingface_token
       GROQ_API=your_groq_api_key
+
+
 
 ▶️ Usage
 
